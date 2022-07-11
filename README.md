@@ -23,3 +23,18 @@ and start the project with
 ``` bash
 nodemon
 ```
+The following packages will be needed to use the app locally:
+  
+  `npm install express-ejs-layouts`
+  
+  `npm install axios`
+  
+  `npm install bcrypt`
+ 
+  `npm install mongoose`
+  
+  `npm install express-session`
+  
+  `npm install connect-mongodb-session`
+  
+  `npm install -g heroku`
