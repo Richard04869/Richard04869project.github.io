@@ -1,0 +1,89 @@
+<style>
+body {
+  display: flex;
+  justify-content:top;
+  align-items: center;
+  flex-direction: column;
+} 
+.cover {
+  height: 40px;
+  border-radius: 3px; 
+  text-align: center;
+  transition: opacity .5s ease-in-out;
+  opacity: 1;
+}
+
+.cover i {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-top: 7px;
+  text-shadow: rgba(0,0,0,0.2) 0px 1px 0px;
+}
+.button {
+  height: 40px;
+  border-radius: 3px;
+  transform-origin: center center -15px;
+  transform-style: preserve-3d;
+  transition: all .5s ease-in-out;
+  display: block; 
+  margin: 20px;
+  cursor: pointer;
+}
+.wrapper { perspective: 100px; }
+.button:hover { transform: rotateX(90deg); }
+.button:hover .cover { opacity: 1; }
+.widget {
+  height: 150px;
+  width:300px;
+  background: #faf6f6;
+  border-radius: 3px;
+  transform-origin: center top;
+  transform: rotateX(-90deg);
+  padding: 9px;
+  border:1px solid #ddd;
+  border-bottom: 1px solid #ccc
+}
+h1 {
+  font: 20px sans-serif; 
+  font-weight: 300; 
+  margin-top: 70px; 
+  color: #999;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+<h1>分享到</h1>
+
+<div class="wrapper"><div class="button pinterest">
+    <div class="cover"><i class="fa fa-pinterest"></i></div>
+    <div class="widget">
+      <a  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="> <img src="https://download.logo.wine/logo/Tencent_QQ/Tencent_QQ-Logo.wine.png" width="250" class="center"></a>
+  <!-- Please call pinit.js only once per page -->
+  <script type="text/javascript" async src="/"></script> 
+    </div>
+  </div>
+  </div>
+  <div class="wrapper"><div class="button pinterest">
+    <div class="cover"><i class="fa fa-pinterest"></i></div>
+    <div class="widget">
+      <a  href="https://service.weibo.com/share/share.php"> <img src="http://www.199it.com/wp-content/uploads/2020/09/1280px-Sina_Weibo.svg_-1.png" width="250" class="center"></a>
+  <!-- Please call pinit.js only once per page -->
+  <script type="text/javascript" async src="/"></script> 
+    </div>
+  </div>
+  </div>
+  <div class="wrapper"> <div class="button twitter">
+    <div class="cover"><i class="fa fa-twitter"></i></div>
+    <div class="widget">
+      <a href="https://twitter.com/CodePen" class="twitter-follow-button" data-show-count="false" data-size="small">Follow</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+    </div>
+  <h1>Social Media Share</h1>

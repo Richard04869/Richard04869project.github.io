@@ -1,0 +1,18 @@
+<h1 style="color:rgba(255,251,240,0.5);">Comments</h1>
+<ul>
+    <% for (item of commentitems){%>
+        <li style="color:rgba(255,251,240,0.5);"><%= item.descr %>  
+            <%= item.createdAt %>
+            <a href="/deleteCommentItem/<%= item.id %>"> delete</a>
+        </li>
+    <% } %>
+</ul>
+
+<h1 style="color:rgba(255,251,240,0.5);">Add a comment</h1>
+<form method="post" action="/video1">
+    <p style="color:rgba(255,251,240,0.5);">description:</p><input type="text" name="desc"><br>
+    <input type="submit">
+</form>
+<hr> 
+<pre><%= JSON.stringify(commentitems,null,5) %></pre>
+

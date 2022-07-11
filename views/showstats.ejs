@@ -1,0 +1,27 @@
+<h3 style="color:rgba(255,251,240,0.5);">Show Stats</h1>
+
+    <h4 style="color:rgba(255,251,240,0.5);">author profile:</p>
+        <pre>
+            <%= JSON.stringify(uid,null,5) %>
+        </pre>
+
+    
+    <table style="color:rgba(255,251,240,0.5);" class="table table-bordered table-striped"> 
+        <thead>
+            <th>title</th>
+            <th>play</th>
+            <th>comment</th>
+        </thead>
+        <tbody>
+            <% for(item of data){%> 
+            <tr> 
+                <td style="color:rgba(255,251,240,0.5);"><%= item.title %> </td> 
+                <td style="color:rgba(255,251,240,0.5);"> <%=item.play%></td> 
+                <td style="color:rgba(255,251,240,0.5);"> <%=item.comment%></td> 
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+    
+    
+    

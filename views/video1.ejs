@@ -1,0 +1,43 @@
+<br />&nbsp;<br />
+<br />&nbsp;<br />
+
+<h2 style="color:rgba(255,251,240,0.7);font-family:'KaiTi'"> —— 第一集 / The first episode —— </h2>
+
+<video width="70%" height="auto" controls poster='images\homepage.jpg'>
+    <source src="videos\光遇片段1.mp4" type="video/mp4">
+    <object data="videos\光遇片段1.mp4" width="320" height="240">
+      <embed width="320" height="240" src="movie.swf">
+    </object>
+</video>
+  
+    <div class="container my-5 py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <div class="card text-dark">
+            <div class="card-body p-4">
+              <h4 class="mb-0">Recent comments</h4>
+              <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
+                <ul style="list-style: none;">
+                    <% for (item of commentitems){%>
+                        <li>  <%= item.createdAt.getMonth()+1 + "/" + item.createdAt.getDate() + "/" + item.createdAt.getFullYear()%>  <br>
+                            <%= item.descr %>
+                            <a href="/deleteCommentItem/<%= item.id %>" style="float: right;"> delete</a>
+                            <hr>
+                        </li>
+                    <% } %>
+                </ul>
+
+                <h4>Add a comment</h1>
+                <form method="post" action="/video1">
+                    <p>description:</p><input type="text" name="desc"><br>
+                    <input type="submit">
+                </form>
+                <hr> 
+                <!-- <pre><%= JSON.stringify(commentitems,null,5) %></pre> -->
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+
