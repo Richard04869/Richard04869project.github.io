@@ -38,3 +38,25 @@ The following packages will be needed to use the app locally:
 `npm install connect-mongodb-session`
   
 `npm install -g heroku`
+
+### Screenshots
+<details>
+  <summary>Screenshot Demos</summary>
+  
+  #### Home Page
+  ![homepage jpg](https://user-images.githubusercontent.com/106720402/178295743-d2e874b3-475d-4f50-8dbd-9c39f9bf058f.png)
+
+  #### login
+  ![login](https://user-images.githubusercontent.com/106720402/178296135-02e7321f-0ae2-4017-9c55-100b951352a9.png)
+
+  #### video collection
+  ![main](https://user-images.githubusercontent.com/106720402/178296708-387e8fc8-c5fc-41d0-a9a7-f4804585f022.png)
+
+  #### video player with comment
+  ![video1](https://user-images.githubusercontent.com/106720402/178297224-2120ccdb-5d94-4937-be75-a100d47d7904.png)
+
+  #### video data from video platform bilibili using api
+ ![stats](https://user-images.githubusercontent.com/106720402/178297595-8a867265-622c-4040-94ab-7c50cb112a3c.png)
+
+
+</details>
